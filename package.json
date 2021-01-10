@@ -1,0 +1,24 @@
+{
+  "name": "12-eat-da-burger",
+  "version": "1.0.0",
+  "description": "Eating The Burger ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvorav/12-Eat-Da-Burger.git"
+  },
+  "author": "Dillon Voravongsy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvorav/12-Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/dvorav/12-Eat-Da-Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
