@@ -1,18 +1,23 @@
-//Requiring mysql
-let mysql = require("mysql")
+let mysql = require("mysql");
+let connection; 
 
-//Assigning connection
-let connection = mysql.createConnection({
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
     password: "Dillon123",
-    database: "burgers_db",
+    database: "burgers_db"
   });
-  
-  connection.connect(function (err) {
-    if (err) throw err;
-    console.log("The local server has been created!")
-  });
-//Exporting connection
-  module.exports = connection
+};
+
+connection.connect(function(err) {
+  if (err) {
+console.log(err)    
+return;
+  }
+});
+
+module.exports = connection;
