@@ -1,7 +1,11 @@
 body {
     width: 99%;
     height: 900px;
-    
+    background-color: tan;
+}
+
+h1 {
+    color:red;
 }
 
 #top-bar {
@@ -19,18 +23,6 @@ body {
     margin: 0;
     list-style-type: none;
     border: 0;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 990px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 990px;
-    }
 }
 
 .enter_section {
@@ -63,6 +55,3 @@ body {
     margin-bottom: 18px;
 }
 
-h1 {
-    color: #f30;
-}
